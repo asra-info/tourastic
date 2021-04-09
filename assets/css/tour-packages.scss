@@ -1,0 +1,465 @@
+/* variable */
+:root{
+
+    --color-primary:rgb(60, 96, 255);
+    --color-secondary:black!important; 
+}
+
+.bg-primary{
+
+    background-color: var(--color-primary);
+
+}
+
+.bg-secondary{
+    background-color: var(--color-secondary)!important;
+
+}
+
+.color-primary{
+    color:var(--color-primary);
+}
+
+.color-secondary{
+    color:var(--color-secondary);
+}
+
+
+body{
+
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+.top-header .top-nav{
+
+
+    color:white;
+    display: flex;
+     justify-content: space-between;
+     padding: 10px 0px;
+}
+
+.top-nav ul{
+
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.top-nav ul li{
+
+    margin: 0 10px;
+
+     
+}
+
+
+
+.top-nav ul li a{
+color: white;
+
+
+     
+}
+.top-nav ul li .fas{
+
+    margin-right:5px;
+}
+
+.ml-auto{
+
+    margin-right: 50px;
+}
+
+.ml-auto li{
+
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* navbar */
+
+.navbar{
+    box-shadow: none;
+}
+
+.navbar .navbar-brand{
+
+    font-weight: 700;
+    color: black;
+}
+
+.navbar a.nav-link{
+
+    color: black;
+    border-bottom: 2px solid white;
+    transition: 0.5s;
+}
+
+.active{
+
+  border-bottom: 2px solid var(--color-primary) ;
+}
+
+
+.navbar a.nav-link:hover{
+
+    border-bottom-color:var(--color-primary);
+}
+
+.lines{
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    margin-top: 2px;
+    border-radius: 35%;
+}
+
+.box{
+    position:relative;
+  }
+  
+
+  .box img{
+      width: 100%;
+      height: 450px;
+  }
+  #img-title{
+    position: absolute;
+    color: #fff;
+    text-align: center;
+
+    left: 0;
+    right: 0;
+    top: 40%;
+    letter-spacing: 3px;
+  }
+
+  #img-title .title-primary{
+
+    color: rgb(26, 179, 240); 
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+    position: relative;
+ }
+ 
+ 
+ 
+  #img-title .title .title-secondary{
+ 
+     font-weight: 700;
+     
+  }
+
+  
+
+
+
+#tours-title{
+
+  width: 100%;
+  padding: 50px 0;
+  margin-top: 0px;
+}
+
+#tours-title title{
+
+  text-align: center;
+}
+
+#tours-title .title-primary{
+
+ color: rgb(26, 179, 240); 
+ font-family: 'Satisfy', cursive;
+ text-align: center;
+ position: relative;
+}
+
+#tours-title .title-primary:before{
+
+ content: '\2708';
+ font-family: FontAwesome;
+ position: absolute;
+ top: 100%;
+ left: 50%;
+ transform:translate(-50%,-50%);
+ font-size:120px;
+ opacity: 0.1;
+ color: #000000;
+ z-index: -1;
+
+}
+
+
+#tours-title .title-primary-domestic:before{
+
+  content: '\f015';
+  font-family: FontAwesome;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+  font-size:120px;
+  opacity: 0.1;
+  color: #000000;
+  z-index: -1;
+ 
+ }
+
+ #tours-title .title-primary-featured:before{
+
+  content: 'featured';
+ font-family: 'Satisfy', cursive;
+  position: absolute;
+  top: 140%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+  font-size:80px;
+  opacity: 0.1;
+  color: #000000;
+  z-index: -1;
+ 
+ }
+#tours-title .title .title-secondary{
+
+  font-weight: 700;
+  
+}
+#tours-title .h1{
+
+  text-align: center;
+}
+
+
+  
+  .swiper-container .swiper-wrapper .swiper-slide .card{
+
+    height: 450px;
+    border: 0.25px solid rgb(211, 207, 207);
+    box-shadow: none;
+    border-bottom: none;
+
+  }
+  
+ 
+  .swiper-slide .card{
+
+    margin-bottom: 100px;
+  }
+  .days-prices {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+ margin-top: 10px;
+  }
+  
+  .days {
+    
+    padding: 5px 10px 10px 20px;
+    left: 0;
+     position: absolute; 
+     display: flex;
+     margin-top: 10px;
+  }
+  
+  .days h6 {
+    padding-left: 10px;
+  }
+  
+  .price {
+   
+    padding: 5px 10px 10px 30px;
+    position: absolute; 
+    right: 0; 
+    display: flex;
+  }
+  .price .text-from{
+
+    margin-top: 10px;
+  }
+  .fa-inr{
+
+    padding: 0px 5px 0 10px;
+   
+  }
+
+  .fa-star-o{
+
+    padding-left: 4px;
+    color: #f1b430;
+  }
+  
+  /* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+#sidebar {
+  width: 500px;
+  position: absolute;
+  margin-top: 1px;
+  left: -500px;
+  height: 100vh;
+  z-index: 999;
+  background: white;
+  color: #fff;
+  transition: all 0.3s;
+  overflow-y: scroll;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#sidebar.active {
+  left: 0;
+}
+
+#dismiss {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  color: black;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 998;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.overlay.active {
+  display: block;
+  opacity: 1;
+}
+
+#sidebar .sidebar-header {
+  /* padding: 20px; */
+  background: white;
+  color: black;
+}
+
+.form{
+
+  margin-top: 60px;
+}
+.filter-container{
+
+  margin: 10px 20px 10px 20px;
+}
+
+.filter-container select{
+
+   cursor: pointer;
+
+}
+
+.filter-container select:focus{
+
+ box-shadow: 0px 0px 5px 1px rgb(25, 209, 169);
+}
+
+
+
+//modal
+
+.form-group{
+
+
+  margin: 10px 20px 10px 20px;
+
+}
+
+.form-group h5{
+
+  margin: 10px 0 20px 0;
+
+}
+
+.form-group input{
+
+  outline: none;
+  box-shadow: 1px 1px 1px 1px solid rgb(20, 20, 22);
+}
+
+.line{
+     margin: auto;
+     width: 90%;
+     height: 1px;
+     background-color: rgb(173, 168, 168);
+
+}
+
+.federation-upper{
+
+  margin: 20px 0 20px 0;
+
+}
+.federation{
+
+  margin: auto;
+  display: flex;
+  text-align: center;
+  
+}
+
+.container .btn-fb{
+
+  background-color: rgb(26, 26, 109);
+  
+}
+
+.container .btn-g{
+
+  background-color: rgb(236, 43, 17);
+  
+}
+
+  @media screen and (max-width:1010px){
+
+    .box img{
+        width: 100%;
+        height: 350px;
+    }
+    .swiper-wrapper{
+
+        margin: 0px;
+      }
+
+      .top-nav ul li i{
+        margin-left: 15px;
+      }
+      
+      .federation{
+
+        display: block;
+      }
+  }
+
+  @media screen and (max-width:650px){
+
+    .price {
+
+        padding: 5px 10px 10px 150px;
+      }
+  }
+
+ 
+  @media screen and (max-width:460px){
+
+    .top-nav ul li{
+    font-size: 11px;
+  }
+  }
+
+  

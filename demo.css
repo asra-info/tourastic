@@ -1,0 +1,157 @@
+/* variable */
+:root {
+    --color-primary:rgb(60, 96, 255);
+    --color-secondary:black!important;
+  }
+  
+  .bg-primary {
+    background-color: var(--color-primary);
+  }
+  
+  .bg-secondary {
+    background-color: var(--color-secondary) !important;
+  }
+  
+  .color-primary {
+    color: var(--color-primary);
+  }
+  
+  .color-secondary {
+    color: var(--color-secondary);
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+  }
+  
+  .top-header .top-nav {
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 10px 0px;
+  }
+  
+  .top-nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .top-nav ul li {
+    margin: 0 10px;
+  }
+  
+  .top-nav ul li a {
+    color: white;
+  }
+  
+  .top-nav ul li .fas {
+    margin-right: 5px;
+  }
+  
+  .ml-auto {
+    margin-right: 50px;
+  }
+  
+  .ml-auto li {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  /* navbar */
+  .navbar {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  
+  .navbar .navbar-brand {
+    font-weight: 700;
+    color: black;
+  }
+  
+  .navbar a.nav-link {
+    color: black;
+    border-bottom: 2px solid white;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  
+  .act {
+    border-bottom: 2px solid var(--color-primary);
+  }
+  
+  .navbar a.nav-link:hover {
+    border-bottom-color: var(--color-primary);
+  }
+  
+  .lines {
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    margin-top: 2px;
+    border-radius: 35%;
+  }
+  
+  
+  
+  .form-group {
+    margin: 10px 20px 10px 20px;
+  }
+  
+  .form-group h5 {
+    margin: 10px 0 20px 0;
+  }
+  
+  .form-group input {
+    outline: none;
+    -webkit-box-shadow: 1px 1px 1px 1px solid #141416;
+            box-shadow: 1px 1px 1px 1px solid #141416;
+  }
+  
+  .line {
+    margin: auto;
+    width: 90%;
+    height: 1px;
+    background-color: #ada8a8;
+  }
+  
+  .federation-upper {
+    margin: 20px 0 20px 0;
+  }
+  
+  .federation {
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+  }
+  
+  .container .btn-fb {
+    background-color: #1a1a6d;
+  }
+  
+  .container .btn-g {
+    background-color: #ec2b11;
+  }
+  
+  @media screen and (max-width: 1010px) {
+    
+    
+    .top-nav ul li i {
+      margin-left: 15px;
+    }
+    .federation {
+      display: block;
+    }
+  }
+  
+  /*# sourceMappingURL=tour-packages.css.map */
