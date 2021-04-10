@@ -99,6 +99,27 @@
     margin-top: 2px;
     border-radius: 35%;
   }
+
+  
+  $shopping-cart-red: #fdfdfd;
+
+
+  .fa-stack[data-count]:after{
+    position:absolute;
+    right:0%;
+    top:0%;
+    content: attr(data-count);
+    font-size:70%;
+    padding:.6em;
+    border-radius:999px;
+    line-height:.75em;
+    color: $shopping-cart-red;
+    text-align:center;
+    min-width:2em;
+    font-weight:bold;
+    background: rgb(161, 72, 161);
+  }
+  
   
 
 $fontSans : 'Montserrat', sans-serif;
