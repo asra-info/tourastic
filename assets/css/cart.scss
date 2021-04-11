@@ -543,10 +543,15 @@ text-align: center;
   
 
   
-  @media screen and (max-width:460px){
+  @media screen and (max-width:770px){
 
-    .top-nav ul li{
-    font-size: 11px;
-  }
-  }
+    
+    .top-nav ul li i{
+      display: none;
+    }
+  
+    .dropdown{
+      margin-right: 0;
+    }
+    }
   /*# sourceMappingURL=tour-packages.css.map */
