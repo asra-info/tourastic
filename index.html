@@ -693,25 +693,47 @@
                 <div class="md-form form-sm mb-5">
                   <i class="fas fa-envelope prefix"></i>
                   <input type="email" id="modalLRInput10" class="form-control form-control-sm validate">
-                  <label data-error="wrong" data-success="right" for="modalLRInput10">Your email</label>
+                  <label data-error="wrong" data-success="right" for="modalLRInput10">Your username</label>
                 </div>
 
                 <div class="md-form form-sm mb-4">
-                  <i class="fas fa-lock prefix"></i>
+                  <i class="fas fa-key prefix"></i>
                   <input type="password" id="modalLRInput11" class="form-control form-control-sm validate">
                   <label data-error="wrong" data-success="right" for="modalLRInput11">Your password</label>
+
+                  <div class="options text-center text-md-right mt-1">
+                    <!-- <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p> -->
+                    <p><a href="#" data-toggle="modal" data-target="#exampleModal" class="blue-text">Forgot Password?</a>
+                    </p>
+                  </div>
                 </div>
                 <div class="text-center mb-3">
                   <button type="button" class="btn blue-gradient btn-block btn-rounded z-depth-1a">Sign in</button>
                 </div>
+                <h6 style="text-align: center;">or</h6>
+
+                <h6 style="text-align: center; margin-bottom: 10px;">Login with</h6>
+          <!-- Grid column -->
+          <div class="fed-upper" style="display: flex; justify-content: center; margin-left: 25px;">
+
+            <!-- Facebook -->
+            <a class="fb-ic" style="color: navy;">
+              <i class="fab fa-facebook-f mr-4"> </i>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic" style="color: rgb(0, 117, 250);">
+              <i class="fab fa-twitter mr-4"> </i>
+            </a>
+            <!-- Google +-->
+            <a class="gplus-ic" style="color: rgb(136, 3, 3);">
+              <i class="fab fa-google-plus-g mr-4"> </i>
+            </a>
+
+          </div>
               </div>
               <!--Footer-->
               <div class="modal-footer">
-                <div class="options text-center text-md-right mt-1">
-                  <!-- <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p> -->
-                  <p><a href="#" data-toggle="modal" data-target="#exampleModal" class="blue-text">Forgot Password?</a>
-                  </p>
-                </div>
+                
                 <button type="button" class="btn btn-outline-info waves-effect ml-auto"
                   data-dismiss="modal">Close</button>
               </div>
@@ -725,22 +747,33 @@
               <!--Body-->
               <div class="modal-body">
                 <div class="md-form form-sm mb-5">
-                  <i class="fas fa-envelope prefix"></i>
+                  <i class="fas fa-user prefix"></i>
                   <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
-                  <label data-error="wrong" data-success="right" for="modalLRInput12">Your email</label>
+                  <label data-error="wrong" data-success="right" for="modalLRInput12">Your first name</label>
+                </div>
+                <div class="md-form form-sm mb-5">
+                  <i class="fas fa-user prefix"></i>
+                  <input type="email" id="modalLRInput13" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="modalLRInput13">Your last name</label>
+                </div>
+                <div class="md-form form-sm mb-5">
+                  <i class="fas fa-user prefix"></i>
+                  <input type="email" id="modalLRInput14" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="modalLRInput14">create username</label>
                 </div>
 
                 <div class="md-form form-sm mb-5">
-                  <i class="fas fa-lock prefix"></i>
-                  <input type="password" id="modalLRInput13" class="form-control form-control-sm validate">
-                  <label data-error="wrong" data-success="right" for="modalLRInput13">Your password</label>
+                  <i class="fas fa-envelope prefix"></i>
+                  <input type="email" id="modalLRInput15" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="modalLRInput15">Your  email</label>
                 </div>
 
-                <div class="md-form form-sm mb-4">
-                  <i class="fas fa-lock prefix"></i>
-                  <input type="password" id="modalLRInput14" class="form-control form-control-sm validate">
-                  <label data-error="wrong" data-success="right" for="modalLRInput14">Repeat password</label>
+                <div class="md-form form-sm mb-5">
+                  <i class="fas fa-key prefix"></i>
+                  <input type="email" id="modalLRInput16" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="modalLRInput16">create password</label>
                 </div>
+
 
                 <div class="text-center form-sm mt-2">
                   <button class="btn btn-info">Register</button>
@@ -789,6 +822,7 @@
           <button id="sendemaillink" type="button" class="btn btn-primary" onclick="emailsent()">Send</button>
         </div>
       </div>
+      
     </div>
   </div>
   <!-- lforget password modal -->
