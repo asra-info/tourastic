@@ -98,13 +98,13 @@ color: white;
     transition: 0.5s;
 }
 
-.active{
+.act{
 
   border-bottom: 2px solid var(--color-primary) ;
 }
 
 
-.navbar a.nav-link:hover{
+.navbar-nav a.nav-link:hover{
 
     border-bottom-color:var(--color-primary);
 }
@@ -296,10 +296,10 @@ color: white;
 ----------------------------------------------------- */
 
 #sidebar {
-  width: 500px;
+  width: 65%;
   position: absolute;
   margin-top: 1px;
-  left: -500px;
+  left: -65%;
   height: 100vh;
   z-index: 999;
   background: white;
@@ -439,7 +439,9 @@ color: white;
       .top-nav ul li i{
         margin-left: 15px;
       }
-      
+      .top-nav ul li i {
+        margin-left: 15px;
+      }
       .federation{
 
         display: block;
@@ -460,6 +462,25 @@ color: white;
     .top-nav ul li{
     font-size: 11px;
   }
+
+  .top-nav ul #email{
+    display: none;
   }
+  
+  .top-nav ul #user-n a{
+  
+    display: block;
+  }
+  }
+
+  
+@media screen and (max-width:770px){
+
+    
+  .top-nav ul li i{
+    display: none;
+  }
+
+}
 
   

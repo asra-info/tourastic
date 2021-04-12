@@ -574,6 +574,9 @@ form .fixedElement {
           display: none;
       }
 
+      .top-nav ul li i {
+        margin-left: 15px;
+      }
       .federation{
 
         display: block;
@@ -597,4 +600,23 @@ form .fixedElement {
   .top-nav ul li{
   font-size: 11px;
 }
+
+.top-nav ul #email{
+  display: none;
+}
+
+.top-nav ul #user-n a{
+
+  display: block;
+}
+}
+
+
+@media screen and (max-width:770px){
+
+    
+  .top-nav ul li i{
+    display: none;
+  }
+
 }

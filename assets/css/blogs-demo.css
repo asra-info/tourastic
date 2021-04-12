@@ -109,22 +109,33 @@
     border-radius: 2px;
     padding: 5px 10px 5px 10px;
 }
-  @media screen and (max-width: 1010px) {
-    
-    
-    .top-nav ul li i {
-      margin-left: 15px;
-    }
-    .federation {
-      display: block;
-    }
+@media screen and (max-width:360px){
+
+  .top-nav ul li{
+  font-size: 12px;
+}
+}
+
+
+@media screen and (max-width:550px){
+
+  .top-nav ul #email{
+    display: none;
+  }
+}
+@media screen and (max-width:770px){
+
+  .top-nav #email i, #phone i{
+    display: none;
   }
 
-  @media screen and (max-width:460px){
+  .top-nav ul #user-n a{
+  
+    display: block;
+  }
 
-    .top-nav ul li{
-    font-size: 11px;
-  }
-  }
+  
+}
+
   
   /*# sourceMappingURL=tour-packages.css.map */

@@ -53,18 +53,18 @@
 
           <ul>
             <li> <a href=""><i class="fas fa-phone"> </i> +91 6264775696</a></li>
-            <li><a href=""><i class="fas fa-envelope"> </i> tourastic@gmail.com</a></li>
+            <li id="email"><a href=""><i class="fas fa-envelope"> </i> tourastic@gmail.com</a></li>
 
           </ul>
 
 
-          <ul>
+          <ul id="user-n">
 
             <div class="dropdown">
               <a type="button" class="dropdown-toggle" data-toggle="dropdown">
                 Hi, aditya sharma
               </a>
-              <div class="dropdown-menu">
+              <div class="dropdown-menu" style="margin-right: 15px;">
                 <a class="dropdown-item" href="user-profile.html"><i class="fa fa-user-o"> Your Profile</i></a>
                 <a class="dropdown-item" href="order-history.html"><i class="fa fa-history" aria-hidden="true"> Order History</i></a>
                 <a class="dropdown-item" href="saved.html"><i class="fa fa-heart-o" aria-hidden="true"> Saved</i></a>
@@ -263,10 +263,10 @@
   <!-- lforget password modal -->
   
   <div class="wrap cf">
-    <h1 class="projTitle"><span>Shopping Cart</span> </h1>
+    <!-- <h1 class="projTitle"><span>Cart</span> </h1> -->
     <div class="heading cf">
       <h1>My Cart</h1>
-      <a href="#" class="continue">Continue Shopping</a>
+      <a href="tour-packages.html" class="continue">Continue Shopping</a>
     </div>
     <div class="cart">
   <!--    <ul class="tableHead">
@@ -276,29 +276,44 @@
          <li>Remove</li>
       </ul>-->
       <ul class="cartWrap">
-        <li class="items odd">
+        <li class="items even">
           
       <div class="infoWrap"> 
           <div class="cartSection">
-          <img src="http://lorempixel.com/output/technics-q-c-300-300-4.jpg" alt="" class="itemImg" />
-            <p class="itemNumber">#QUE-007544-002</p>
-            <h3>Item Name 1</h3>
+          <img src="assets/images/listing-1.PNG" alt="" class="itemImg" />
+            <!-- <p class="itemNumber">#QUE-007544-002</p> -->
+            <h3>Magical Dubai Tour – 5 Days and 4 Nights</h3>
           
-             <p> <input type="text"  class="qty" placeholder="3"/> x $5.00</p>
+             <!-- <p> <input type="text"  class="qty" placeholder="3"/> x $5.00</p> -->
           
-            <p class="stockStatus"> In Stock</p>
-          </div>  
+             <p>Departure date: 17/04/2021</p>
+             <p>Duration: 5 Days and 4 Night</p>
+             <p>From <i class="fa fa-inr" aria-hidden="true"></i> 15,000 /-</p>
+
+
+             <div class="booking-details">
+             <p id="booking-title">Booking Details</p>
+
+             <p class="bd">Adult: 2 x <i class="fa fa-inr" aria-hidden="true"></i> 15,000 /- <i class="fa fa-long-arrow-right" aria-hidden="true"></i> <i class="fa fa-inr" aria-hidden="true"></i> 30,000 /-  </p>
+             
+             <p class="bd">Child: 1 x <i class="fa fa-inr" aria-hidden="true"></i> 8,000 /- <i class="fa fa-long-arrow-right" aria-hidden="true"></i> <i class="fa fa-inr" aria-hidden="true"></i> 8,000 /-  </p>
+             
+             <p class="bd">Inflant (Under age 2): 1 x <i class="fa fa-inr" aria-hidden="true"></i> 5,000 /- <i class="fa fa-long-arrow-right" aria-hidden="true"></i> <i class="fa fa-inr" aria-hidden="true"></i> 5,000 /-  </p>
+            </div>
+            <!-- <p class="stockStatus"> In Stock</p> -->
+          </div>      
       
           
           <div class="prodTotal cartSection">
-            <p>$15.00</p>
+            <p><i class="fa fa-inr" aria-hidden="true"></i> 43,000 /-</p>
           </div>
                 <div class="cartSection removeWrap">
              <a href="#" class="remove">x</a>
           </div>
         </div>
         </li>
-        <li class="items even">
+
+        <!-- <li class="items even">
           
          <div class="infoWrap"> 
           <div class="cartSection">
@@ -320,9 +335,9 @@
              <a href="#" class="remove">x</a>
           </div>
         </div>
-        </li>
+        </li> -->
         
-              <li class="items odd">
+              <!-- <li class="items odd">
                <div class="infoWrap"> 
           <div class="cartSection">
               
@@ -343,8 +358,8 @@
              <a href="#" class="remove">x</a>
           </div>
                 </div>
-        </li>
-        <li class="items even">
+        </li> -->
+        <!-- <li class="items even">
          <div class="infoWrap"> 
           <div class="cartSection info">
                
@@ -368,7 +383,7 @@
           </div>
            </div>
            <div class="special"><div class="specialContent">Free gift with purchase!, gift wrap, etc!!</div></div>
-        </li>
+        </li> -->
         
         
         <!--<li class="items even">Item 2</li>-->
@@ -381,13 +396,13 @@
     
     <div class="subtotal cf">
       <ul>
-        <li class="totalRow"><span class="label">Subtotal</span><span class="value">$35.00</span></li>
+        <li class="totalRow"><span class="label">Subtotal</span><span class="value">Rs. 43,000 /-</span></li>
         
-            <li class="totalRow"><span class="label">Shipping</span><span class="value">$5.00</span></li>
+            <li class="totalRow"><span class="label">Shipping</span><span class="value">Rs.00</span></li>
         
-              <li class="totalRow"><span class="label">Tax</span><span class="value">$4.00</span></li>
-              <li class="totalRow final"><span class="label">Total</span><span class="value">$44.00</span></li>
-        <li class="totalRow"><a href="#" class="btn continue">Checkout</a></li>
+              <!-- <li class="totalRow"><span class="label">Tax</span><span class="value">$4.00</span></li> -->
+              <li class="totalRow final"><span class="label">Total</span><span class="value">Rs. 43,000 /-</span></li>
+        <li class="totalRow" style="list-style: none;"><a href="#" class="btn continue">Checkout</a></li>
       </ul>
     </div>
   </div>

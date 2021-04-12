@@ -100,7 +100,7 @@ color: white;
     transition: 0.5s;
 }
 
-.active{
+.act{
 
   border-bottom: 2px solid var(--color-primary) ;
 }
@@ -205,6 +205,11 @@ color: white;
   margin: 20px 50px 20px 50px;
 }
 
+#send-btn a{
+
+  margin-left: 50px;
+}
+
 
   @media screen and (max-width: 1010px) {
     
@@ -213,18 +218,35 @@ color: white;
       margin: 10px 20px 10px 20px;
     }
     
-    .top-nav ul li i {
-      margin-left: 15px;
-    }
-    .federation {
-      display: block;
-    }
+    
+    
   }
 
 
-  @media screen and (max-width:460px){
+  @media screen and (max-width:360px){
 
     .top-nav ul li{
-    font-size: 11px;
+    font-size: 12px;
   }
+  }
+
+  
+  @media screen and (max-width:550px){
+
+    .top-nav ul #email{
+      display: none;
+    }
+  }
+  @media screen and (max-width:770px){
+
+    .top-nav #email i, #phone i{
+      display: none;
+    }
+
+    .top-nav ul #user-n a{
+    
+      display: block;
+    }
+
+    
   }

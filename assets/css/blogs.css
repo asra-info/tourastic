@@ -231,10 +231,31 @@
   }
   
 
-  @media screen and (max-width:460px){
+  @media screen and (max-width:360px){
 
     .top-nav ul li{
-    font-size: 11px;
+    font-size: 12px;
   }
+  }
+
+  
+  @media screen and (max-width:550px){
+
+    .top-nav ul #email{
+      display: none;
+    }
+  }
+  @media screen and (max-width:770px){
+
+    .top-nav #email i, #phone i{
+      display: none;
+    }
+
+    .top-nav ul #user-n a{
+    
+      display: block;
+    }
+
+    
   }
   /*# sourceMappingURL=tour-packages.css.map */

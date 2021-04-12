@@ -31,9 +31,10 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     padding: 10px 0px;
+    background-color: black;
   }
   
   .top-nav ul {
@@ -133,14 +134,11 @@ $fontSerif : 'Droid Serif', serif;
     -o-transition: $transition-property $transition-time $method;
     transition: $transition-property $transition-time $method;
 }
-*{ box-sizing:border-box;}
 
 
 
 body {
   color: #333;
-  -webkit-font-smoothing: antialiased;
-  font-family: $fontSerif;
  
 }
  img {
@@ -152,7 +150,6 @@ body {
 
 
 .wrap {
-  width: 75%;
   max-width: 960px;
   margin: 0 auto;
   padding: 5% 0;
@@ -242,7 +239,10 @@ body {
 
 .cart {
   padding: 1em 0 ;
- 
+ .cartWrap{
+
+  padding: 0;
+ }
   .items {
     display: block;
     width: 100%;
@@ -280,34 +280,42 @@ body {
          
       }
       p {
-        display: inline-block;
+        display: block;
         font-size: .85em;
-        
         color: #777777;
         font-family: $fontSans;
-            .quantity {
-        font-weight: bold;
-              color: #333;
+       margin: 0;
       }
-        
-        &.stockStatus {
-          color: #82CA9C;
-          font-weight: bold;
-          padding: .5em 0 0 1em;
-          text-transform: uppercase;
-          &.out {
-            color: #F69679;
-          }
-        }
-        
-      }
+
       .itemImg {
         width: 4em;
-       
+       height: 120px;
         float: left;
       }
-      &.qtyWrap , &.prodTotal {
-        text-align: center;
+
+.booking-details{
+
+  margin-top: 10px;
+}
+
+.booking-details p{
+
+  margin-left: 128px;
+}
+
+#booking-title{
+
+  color: black;
+  font-weight: 600;
+}
+.bd{
+
+  margin-left: 128px;
+  color: #f30;
+  font-weight: 700;
+}
+     &.prodTotal {
+        //text-align: center;
     p {
       font-weight: bold;
       font-size: 1.25em;
@@ -327,6 +335,8 @@ body {
         width: 8em;
         display: inline;
         padding-right: 1em;
+        margin-bottom: 10px;
+        border-radius: 5px;
       }
        
  
@@ -473,52 +483,69 @@ float: right;
     .value {
  
       letter-spacing: -.025em;
-      width: 35%;
+      width: 60%;
     }
   }
 }
 
-@media only screen and (max-width:39.375em){
+@media only screen and (max-width:1010px){
 
-.wrap {
-  width: 98%;
-  padding: 2% 0;
-}
-.projTitle{
-  font-size: 1.5em;
-  padding: 10% 5%;
-}
-.heading {
-  padding: 1em;
-  font-size: 90%;
-}
-.cart {
-  .items {
+.wrap{
 
-  .cartSection {
-    width: 90%;
-      display: block;float: left;
-     &.qtyWrap {
-       width: 10%;
-      text-align: center;
-       padding: .5em 0;
-       float: right;
-       &:before {
-         content: "QTY";
-         display: block;
-         font-family: $fontSans;
-         padding: .25em;
-         font-size: .75em;
-       }
-     }
-     &.prodTotal , &.removeWrap { 
-       display: none;
-     }
-    .itemImg {
-      width: 25%;
+  width: 100%;
+  margin:0;
+}
+
+.cart{
+
+  
+
+  .items{
+
+    .cartSection{
+
+      display: block;
+
+      .booking-details{
+
+        p{
+
+          margin-left: 0;
+        }
+      }
+      .itemImg{
+        width: 100%;
+        height: 300px;
+      }
+
+      
+      .bd{
+
+        margin-left: 0;
+      }
+
+      &.prodTotal {
+        text-align: right;
+    p {
+      font-weight: bold;
+      font-size: 1.25em;
     }
+       
+      }
+      
+    }
+    
+    
   }
-  }}
+  
+}
+.infoWrap{
+a.remove{
+
+  right: 0;
+}
+}
+
 .promoCode , .subtotal{
   width: 100%;
 }
@@ -539,9 +566,50 @@ text-align: center;
     .federation {
       display: block;
     }
+
+    .heading{
+
+      margin: 0 10px;
+    }
+    .cart .items .cartSection .itemImg{
+    padding-right: 0em;
+  }
   }
   
+  @media screen and (max-width: 360px){
+    
+    .heading{
+      display: grid;
+    }
 
+    .heading a{
+
+      text-align: center;
+    }
+
+    .heading h1{
+
+      margin-left: 10px;
+    }
+
+    .heading a.continue:link{
+
+      text-align: center;
+      margin: 0 10%;
+    }
+  }
+
+  @media screen and (max-width:550px){
+
+    .top-nav ul #email{
+      display: none;
+    }
+
+    .top-nav ul #user-n a{
+    
+      display: block;
+    }
+  }
   
   @media screen and (max-width:770px){
 
@@ -552,6 +620,10 @@ text-align: center;
   
     .dropdown{
       margin-right: 0;
+    }
+
+    .itemImg {
+      padding-right: 0;
     }
     }
   /*# sourceMappingURL=tour-packages.css.map */

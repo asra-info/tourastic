@@ -24,6 +24,11 @@
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
   }
+
+ .top-header{
+
+  background-color: black;
+ }
   
   .top-header .top-nav {
     color: white;
@@ -34,7 +39,6 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 10px 0px;
-    background-color: black;
   }
   
   .top-nav ul {
@@ -48,12 +52,10 @@
   
   .top-nav ul li {
     margin: 0 10px;
-    color: white;
-    
   }
   
   .top-nav ul li a {
-    color: rgb(255, 251, 251);
+    color: white;
   }
   
   .top-nav ul li .fas {
@@ -122,10 +124,10 @@
     background: rgb(161, 72, 161);
   }
 
-  .dropdown{
+  /* .dropdown{
 
     margin-right: 100px;
-  }
+  } */
 
   
 .dropdown-menu a i{
@@ -2169,6 +2171,7 @@
     line-height: 1.7;
   }
   
+
   .description {
     font-size: .875rem;
   }
@@ -2209,27 +2212,34 @@
     .top-nav ul li i {
       margin-left: 15px;
     }
+
     .federation {
       display: block;
     }
   }
-  
-  @media screen and (max-width:522px){
 
-    .top-nav ul li{
-    font-size: 11px;
-  }
-  }
+  @media screen and (max-width:550px){
 
+    .top-nav ul #email{
+      display: none;
+    }
+  }
   @media screen and (max-width:770px){
 
-    
-  .top-nav ul li i{
-    display: none;
-  }
+    .top-nav #email i, #phone i{
+      display: none;
+    }
 
-  .dropdown{
-    margin-right: 0;
+    .top-nav ul #user-n a{
+    
+      display: block;
+    }
+
+    
   }
-  }
+  
+
+  
+
+  
   /*# sourceMappingURL=tour-packages.css.map */

@@ -104,6 +104,7 @@
 
     display: block;
     width: 90%;
+    height: 100%;
     margin: auto;
   }
 
@@ -115,7 +116,7 @@
   .img-fluid{
 
     width: 100%;
-    height: 50%;
+    height: 450px;
     border-radius: 3px;
     box-shadow: 1px 10px 10px 3px  #d1cbcb;
   }
@@ -185,7 +186,7 @@
   }
  .book-tour-modal{
 
-    top: 20%;
+    top: 10%;
  }
 
  .book-form h4{
@@ -328,7 +329,9 @@ color: rgb(90, 90, 90);
     display: none;
   } */
 
-  
+  .top-nav ul li i {
+    margin-left: 15px;
+  }
   .flex-container {
     display: grid;
   }
@@ -382,5 +385,23 @@ color: rgb(90, 90, 90);
     .top-nav ul li{
     font-size: 11px;
   }
+
+  .top-nav ul #email{
+    display: none;
+  }
+
+  .top-nav ul #user-n a{
+  
+    display: block;
+  }
+  }
+
+
+  @media screen and (max-width:770px){
+
+    
+    .top-nav ul li i{
+      display: none;
+    }
   }
   /*# sourceMappingURL=tour-packages.css.map */
