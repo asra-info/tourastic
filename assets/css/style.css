@@ -543,6 +543,26 @@ form .fixedElement {
   -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
   filter: blur(5px);
 }
+
+
+.address{
+  display: flex;
+  margin-top: 10px;
+}
+
+#validationDefault04, #validationDefault06{
+
+  margin-right: 5px;
+}
+
+#validationDefault05, #validationDefault07{
+
+  margin-left: 5px;
+}
+
+.form-control{
+  padding-left: 10px;
+}
 @media screen and (max-width: 650px){
 
     .banner{
