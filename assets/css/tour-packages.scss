@@ -400,29 +400,24 @@ color: white;
 
 }
 
-.federation-upper{
 
-  margin: 20px 0 20px 0;
-
-}
-.federation{
-
-  margin: auto;
+.address{
   display: flex;
-  text-align: center;
-  
+  margin-top: 10px;
 }
 
-.container .btn-fb{
+#validationDefault04, #validationDefault06{
 
-  background-color: rgb(26, 26, 109);
-  
+  margin-right: 5px;
 }
 
-.container .btn-g{
+#validationDefault05, #validationDefault07{
 
-  background-color: rgb(236, 43, 17);
-  
+  margin-left: 5px;
+}
+
+.form-control{
+  padding-left: 10px;
 }
 
   @media screen and (max-width:1010px){

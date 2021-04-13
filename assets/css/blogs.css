@@ -175,6 +175,27 @@
 
     color: rgb(0, 140, 255);
 }
+
+.address{
+  display: flex;
+  margin-top: 10px;
+}
+
+#validationDefault04, #validationDefault06{
+
+  margin-right: 5px;
+}
+
+#validationDefault05, #validationDefault07{
+
+  margin-left: 5px;
+}
+
+.form-control{
+  padding-left: 10px;
+}
+
+
   
 /*   
   

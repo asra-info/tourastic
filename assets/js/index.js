@@ -6,3 +6,10 @@ function emailsent(){
    let check = document.getElementById("checkemail");
    check.innerHTML = "Check Your Email...";
 }
+
+
+function changeColor(){
+
+    document.getElementById("heart").style.color = "red";
+
+}

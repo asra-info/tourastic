@@ -180,25 +180,24 @@ color: white;
     background-color: #ada8a8;
   }
   
-  .federation-upper {
-    margin: 20px 0 20px 0;
-  }
-  
-  .federation {
-    margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    text-align: center;
-  }
-  
-  .container .btn-fb {
-    background-color: #1a1a6d;
-  }
-  
-  .container .btn-g {
-    background-color: #ec2b11;
-  }
+.address{
+  display: flex;
+  margin-top: 10px;
+}
+
+#validationDefault04, #validationDefault06{
+
+  margin-right: 5px;
+}
+
+#validationDefault05, #validationDefault07{
+
+  margin-left: 5px;
+}
+
+.form-control{
+  padding-left: 10px;
+}
   
 .row{
 

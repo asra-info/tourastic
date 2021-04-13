@@ -349,24 +349,23 @@ body {
   background-color: #ada8a8;
 }
 
-.federation-upper {
-  margin: 20px 0 20px 0;
-}
-
-.federation {
-  margin: auto;
+.address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: center;
+  margin-top: 10px;
 }
 
-.container .btn-fb {
-  background-color: #1a1a6d;
+#validationDefault04, #validationDefault06 {
+  margin-right: 5px;
 }
 
-.container .btn-g {
-  background-color: #ec2b11;
+#validationDefault05, #validationDefault07 {
+  margin-left: 5px;
+}
+
+.form-control {
+  padding-left: 10px;
 }
 
 @media screen and (max-width: 1010px) {
