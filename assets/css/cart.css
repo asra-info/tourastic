@@ -554,7 +554,7 @@ a.remove:hover {
 }
 
 @media screen and (max-width: 770px) {
-  .top-nav ul li i {
+  .top-nav #email i, #phone i {
     display: none;
   }
   .dropdown {

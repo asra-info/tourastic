@@ -112,6 +112,7 @@
 
     margin: 20px 0 20px 0; 
     font-family: 'Lato', sans-serif;
+    text-align: center;
   }
   .img-fluid{
 
@@ -167,11 +168,22 @@
    .book-btn{
 
     display: block;
-    width: 200px;
+    width: 350px;
     margin: auto;
   }
 
-  .book-btn button{
+  .book-btn .btn1{
+    
+    background-color: rgb(71, 181, 255);
+    color: white;
+  }
+
+  .book-btn .btn1:hover{
+
+    color: white;
+    background-color: rgb(32, 158, 241);
+  }
+  .book-btn .btn2{
 
     
     background-color: rgb(240, 36, 0);
