@@ -412,6 +412,20 @@ form .fixedElement {
   }
   
   
+  #tours-title .title-primary-sale:before{
+  
+    content: 'top sale';
+   font-family: 'Satisfy', cursive;
+    position: absolute;
+    top: 140%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    font-size:80px;
+    opacity: 0.1;
+    color: #000000;
+    z-index: -1;
+   
+   }
   
    #tours-title .title-primary-featured:before{
   
@@ -574,6 +588,23 @@ form .fixedElement {
 .form-control{
   padding-left: 10px;
 }
+
+.offer{
+
+    position: absolute;
+    left: 0;
+    top: 10%;
+}
+  
+.offer button{
+
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 0px 2px 2px 0px;
+}
+
 @media screen and (max-width: 650px){
 
     .banner{
