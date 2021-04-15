@@ -25,7 +25,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- custom CSS -->
-  <link rel="stylesheet" href="assets/css/order-history.css">
+  <link rel="stylesheet" href="assets/css/saved.css">
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -37,7 +37,7 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-<link rel="stylesheet" href="assets/css/cart.css">
+  <link rel="stylesheet" href="assets/css/">
   <title>Document</title>
 </head>
 <body>
@@ -60,12 +60,12 @@
 
               <div class="dropdown">
                 <a type="button" class="dropdown-toggle" data-toggle="dropdown">
-                  Your orders
+                  Saved
                 </a>
                 <div class="dropdown-menu" style="margin-right: 15px;">
-                  <a class="dropdown-item" href="user-profile.html"><i class="fa fa-user-o"> Your Profile</i></a>
-                  <!-- <a class="dropdown-item" href="#"><i class="fa fa-history" aria-hidden="true"> Order History</i></a> -->
-                  <a class="dropdown-item" href="saved.html"><i class="fa fa-heart-o" aria-hidden="true"> Saved</i></a>
+                  <!-- <a class="dropdown-item" href="user-profile.html"><i class="fa fa-user-o">Saved</i></a> -->
+                  <a class="dropdown-item" href="user-profile.html"><i class="fa fa-history" aria-hidden="true"> Your profile</i></a>
+                  <a class="dropdown-item" href="order-history.html"><i class="fa fa-heart-o" aria-hidden="true"> Order History</i></a>
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="index.html"><i class="fa fa-sign-out" aria-hidden="true"> Logout</i></a>
                 </div>
@@ -88,8 +88,14 @@
 
         <a class="navbar-brand" href="#" style="color:rgb(98, 98, 255);">Tourastic</a>
 
-
-
+    
+          <a class="cart-link" href="cart.html">
+            <span class="fa-stack" data-count="3">
+              <i class="fa fa-stack-2x"></i>
+              <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+            </span>
+          </a>  
+        
         <button class="navbar-toggler" style="height: auto; width: auto;" type="button" data-toggle="collapse"
           data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <div class="lines"></div>
@@ -139,68 +145,32 @@
   <!-- !header -->
 
 
-  <div class="wrap cf">
-    <!-- <h1 class="projTitle"><span>Cart</span> </h1> -->
-    <div class="heading cf">
-      <h1>Thanks for your order, Aditya!</h1>
-      <!-- <a href="tour-packages.html" class="continue">Continue Shopping</a> -->
-    </div>
-    <div class="cart">
-  <!--    <ul class="tableHead">
-        <li class="prodHeader">Product</li>
-        <li>Quantity</li>
-        <li>Total</li>
-         <li>Remove</li>
-      </ul>-->
-      <ul class="cartWrap">
-        <li class="items even">
-          
-      <div class="infoWrap"> 
-          <div class="cartSection">
-            
-        <div class="ribbon"><span>paid</span></div>
-          <img src="assets/images/listing-1.PNG" alt="" class="itemImg" />
-            <!-- <p class="itemNumber">#QUE-007544-002</p> -->
-            <h3>Magical Dubai Tour – 5 Days and 4 Nights</h3>
-          
-             <!-- <p> <input type="text"  class="qty" placeholder="3"/> x $5.00</p> -->
-          
-             <p>Departure date: 17/04/2021</p>
-             <p>Duration: 5 Days and 4 Night</p>
-             <p>From <i class="fa fa-inr" aria-hidden="true"></i> 15,000 /-</p>
+<!-- main-content -->
+  <main class="my-5">
+    <div class="container">
+        <!--Section: Content-->
+        <section class="text-center">
+            <!-- <h4 class="mb-5"><strong>Latest posts</strong></h4> -->
 
+            <div class="row">
+              
 
-             <div class="booking-details">
-             <p id="booking-title">Booking Details</p>
-
-             <p class="bd">Adult: 2 x <i class="fa fa-inr" aria-hidden="true"></i> 15,000 /- <i class="fa fa-long-arrow-right" aria-hidden="true"></i> <i class="fa fa-inr" aria-hidden="true"></i> 30,000 /-  </p>
-             
-             <p class="bd">Child: 1 x <i class="fa fa-inr" aria-hidden="true"></i> 8,000 /- <i class="fa fa-long-arrow-right" aria-hidden="true"></i> <i class="fa fa-inr" aria-hidden="true"></i> 8,000 /-  </p>
-             
-             <p class="bd">Inflant (Under age 2): 1 x <i class="fa fa-inr" aria-hidden="true"></i> 5,000 /- <i class="fa fa-long-arrow-right" aria-hidden="true"></i> <i class="fa fa-inr" aria-hidden="true"></i> 5,000 /-  </p>
             </div>
-            <!-- <p class="stockStatus"> In Stock</p> -->
-          </div>      
-      
-          
-          <div class="prodTotal cartSection">
-            <p><i class="fa fa-inr" aria-hidden="true"></i> 43,000 /-</p>
-          </div>
-                <div class="cartSection removeWrap">
-             <a href="#" class="remove">x</a>
-          </div>
-        </div>
-        </li>
 
-       
-      </ul>
+            <div class="row">
+                
+
+
+            </div>
+        </section>
+        <!--Section: Content-->
+
     </div>
-    
+</main>
 
-    <h4 style="text-align: center; color: cadetblue; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">No more orders</h4>
-  </div>
+
+
   
-
   <!-- Footer -->
 <footer class="page-footer font-small unique-color-dark">
 
