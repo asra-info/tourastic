@@ -133,14 +133,6 @@
 }
 
 
-.shop-cart{
-
-  display: none;
-  position: absolute;
-  right: 13%;
-
-}
-
 
 
 
@@ -180,10 +172,4 @@
 @media screen and (max-width:990px){
 
 
-  .shop-cart{
-
-    display: block;
-  }
-
-  .shopcart{display: none;}
 }
