@@ -134,6 +134,10 @@
 
 
 
+.modal{
+  overflow:scroll;
+}
+
   .address{
     display: flex;
     margin-top: 10px;
