@@ -32,6 +32,8 @@
 
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
+  
+
 
 
 </head>
@@ -1175,6 +1177,118 @@
   <!-- lforget password modal -->
 
 
+<!-- testimonial -->
+<div class="testimonial">
+
+  <section id="tours-title">
+
+    <div class="container">
+      <div class="title">
+        <h4 style="font-size:xx-large;" class="title-primary title-primary1">Testimonials</h4>
+        <!-- <h1 class="h1 h1-responsive title-secondary">Testimonials</h1> -->
+      </div>
+    </div>
+  </section>
+
+<div id="testiM" class="swiper-container">
+  <!-- Additional required wrapper -->
+  <div id="testimonial" class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">
+      <div class="card">
+
+        <div class="inner-monial">
+        
+          <img src="assets/images/feature-2.PNG" alt="">
+
+          <h6 id="monial-name">Aditya Sharma</h6>
+          <h6 id="post">Developer</h6>
+
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam nemo expedita deserunt laborum quasi quia, quod vel aut iste doloremque, odio laudantium rerum dicta!</p>
+        </div>
+        </div>
+        
+      </div>
+      
+      <div class="swiper-slide">
+        <div class="card">
+  
+          <div class="inner-monial">
+          
+            <img src="assets/images/feature-2.PNG" alt="">
+  
+            <h6 id="monial-name">Aditya Sharma</h6>
+            <h6 id="post">Developer</h6>
+  
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam nemo expedita deserunt laborum quasi quia, quod vel aut iste doloremque, odio laudantium rerum dicta!</p>
+          </div>
+          </div>
+          
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+    
+            <div class="inner-monial">
+            
+              <img src="assets/images/feature-2.PNG" alt="">
+    
+              <h6 id="monial-name">Aditya Sharma</h6>
+              <h6 id="post">Developer</h6>
+    
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam nemo expedita deserunt laborum quasi quia, quod vel aut iste doloremque, odio laudantium rerum dicta!</p>
+            </div>
+            </div>
+            
+          </div>
+
+
+          <div class="swiper-slide">
+            <div class="card">
+      
+              <div class="inner-monial">
+              
+                <img src="assets/images/feature-2.PNG" alt="">
+      
+                <h6 id="monial-name">Aditya Sharma</h6>
+                <h6 id="post">Developer</h6>
+      
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam nemo expedita deserunt laborum quasi quia, quod vel aut iste doloremque, odio laudantium rerum dicta!</p>
+              </div>
+              </div>
+              
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card">
+        
+                <div class="inner-monial">
+                
+                  <img src="assets/images/feature-2.PNG" alt="">
+        
+                  <h6 id="monial-name">Aditya Sharma</h6>
+                  <h6 id="post">Developer</h6>
+        
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam nemo expedita deserunt laborum quasi quia, quod vel aut iste doloremque, odio laudantium rerum dicta!</p>
+                </div>
+                </div>
+                
+              </div>
+    </div>
+
+    
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev">
+        </div>
+        <div class="swiper-button-next"></div>
+  </div>
+
+  
+</div>
+</div>
+<!-- end testimonial -->
 
 
   <!-- discount poster -->
@@ -1539,5 +1653,59 @@
     //   },
   });
 
+
+
+
+
+  const testimonial = new Swiper('.testimonial .swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: false,
+    slidesPerView: 1,
+    spaceBetween: 10,
+
+    //   If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      740: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      840: {
+        slidesPerView: 2,
+        spaceBetween: 30
+      },
+      991: {
+        slidesPerView: 3,
+        spaceBetween: 40
+      },
+
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 40
+      },
+      1440: {
+        slidesPerView: 5,
+        spaceBetween: 40
+      }
+    }
+
+    // And if we need scrollbar
+    //   scrollbar: {
+    //     el: '.swiper-scrollbar',
+    //   },
+  });
 
 </script>
