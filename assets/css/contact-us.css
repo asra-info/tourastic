@@ -80,8 +80,10 @@ body{
 
 #send-btn a{
 
-  margin-left: 50px;
+  width: 100%;
+  margin: auto;
 }
+
 
 
   @media screen and (max-width: 1010px) {
