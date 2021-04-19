@@ -109,6 +109,7 @@
      position: relative;
      width: 700px;
      margin: auto;
+     display: grid;
      justify-content: center;
  }
  .col-auto{

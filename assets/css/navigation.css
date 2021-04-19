@@ -138,6 +138,10 @@
   overflow:scroll;
 }
 
+.modal{
+  overflow-x: hidden;
+}
+
   .address{
     display: flex;
     margin-top: 10px;
