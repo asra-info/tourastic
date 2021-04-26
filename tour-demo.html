@@ -327,17 +327,40 @@
     </div>
     <!-- lforget password modal -->
 
+    
     <!-- book tour modal -->
-    <div class="modal fade bd-example-modal-lg book-tour-modal" tabindex="-1" role="dialog"
-        aria-labelledby="myLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
+    <div class="modal fade" id="modalLRForm2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog cascading-modal" role="document">
+      <!--Content-->
+      <div class="modal-content">
 
+        <!--Modal cascading tabs-->
+        <div class="modal-c-tabs">
 
-                <!-- book modal -->
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#panel9" role="tab">
+                Enter Details</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#panel10" role="tab">
+                Enquiry</a>
+            </li>
+          </ul>
+
+          <!-- Tab panels -->
+          <div class="tab-content">
+            <!--Panel 7-->
+            <div class="tab-pane fade in show active" id="panel9" role="tabpanel">
+
+              <!--Body-->
+              <div class="modal-body mb-1">
+               
                 <form class="book-form">
                     <h4>Customize & Book Tour Now.</h4>
-                    <div class="form-row align-items-center">
+                    <div class="form-row">
 
 
                         <div class="col-auto">
@@ -368,26 +391,79 @@
                         
                         <div class="col-auto">
 
-                            <input style="width:290px;" type="number" class="form-control mb-2" id="inlineFormInput"
+                            <input type="number" class="form-control mb-2" id="inlineFormInput"
                                 placeholder="Number of Child (under age 3)">
 
 
                             </input>
                         </div>
 
+                        
+                        <div class="col-auto">
+
+                            <input type="text" class="form-control mb-2" id="inlineFormInput"
+                                placeholder="Enter Promocode (optional)">
+
+
+                            </input>
+                        </div>
 
                         <div class="col-auto">
-                            <button type="submit" class="btn btn-primary mb-2">Book</button>
+                            <button id="submit" type="submit" class="btn btn-primary mb-2">Submit Details</button>
 
                         </div>
                     </div>
                 </form>
 
+              </div>
+              
 
             </div>
-        </div>
-    </div>
+            <!--/.Panel 7-->
 
+            <!--Panel 8-->
+            <div class="tab-pane fade" id="panel10" role="tabpanel">
+
+              <!--Body-->
+              <div class="modal-body">
+                <div class="md-form form-sm mb-5">
+                  <i class="fas fa-user prefix"></i>
+                  <input required type="email" id="modalLRInput17" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="modalLRInput17">Name</label>
+                </div>
+
+                <div class="md-form form-sm mb-5">
+                  <i class="fas fa-envelope prefix"></i>
+                  <input required type="email" id="modalLRInput18" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="modalLRInput18">Email</label>
+                </div>
+
+                
+
+
+                  <div class="md-form form-sm mb-5">
+                    <i class="fa fa-pencil prefix"></i>
+                    <textarea id="form7" class="md-textarea form-control " rows="2"></textarea>
+                    <label for="form7">Material textarea</label>
+                  </div>
+
+
+                <div class="text-center form-sm mt-2">
+                  <button class="btn btn-info">Send</button>
+                  </div>
+
+              </div>
+             
+            </div>
+            <!--/.Panel 8-->
+          </div>
+
+        </div>
+      </div>
+      <!--/.Content-->
+    </div>
+  </div>
+    <!-- !book Tour Modal -->
 
     <div class="img">
 
@@ -472,9 +548,9 @@
                 </div>
 
 
-                <div class="book-btn" style="display: flex;">
+                <div class="book-btn-add-tocart">
                     <button class="btn btn1">Add To Cart</button>
-                    <button class="btn btn2" data-toggle="modal" data-target=".bd-example-modal-lg">Book Now</button>
+                    <button class="btn btn2" data-toggle="modal" data-target="#modalLRForm2">Book Now</button>
 
                 </div>
 

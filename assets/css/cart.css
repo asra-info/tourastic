@@ -1,9 +1,7 @@
-
 body {
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
 }
-
 
 body {
   color: #333;
@@ -34,7 +32,7 @@ img {
 }
 
 .projTitle {
-  font-family: "Montserrat", sans-serif;
+  font-family: sans-serif;
   font-weight: bold;
   text-align: center;
   font-size: 2em;
@@ -45,7 +43,7 @@ img {
 }
 
 .projTitle span {
-  font-family: "Droid Serif", serif;
+  font-family: sans-serif;
   font-weight: normal;
   font-style: italic;
   text-transform: lowercase;
@@ -58,14 +56,14 @@ img {
 }
 
 .heading h1 {
-  font-family: "Droid Serif", serif;
+  font-family: serif;
   font-size: 2em;
   float: left;
 }
 
 .heading a.continue:link, .heading a.continue:visited {
   text-decoration: none;
-  font-family: "Montserrat", sans-serif;
+  font-family: serif;
   letter-spacing: -.015em;
   font-size: .75em;
   padding: 1em;
@@ -99,7 +97,7 @@ img {
 .tableHead {
   display: table;
   width: 100%;
-  font-family: "Montserrat", sans-serif;
+  font-family: serif;
   font-size: .75em;
 }
 
@@ -150,7 +148,7 @@ img {
 
 .cart .items .cartSection h3 {
   font-size: 1em;
-  font-family: "Montserrat", sans-serif;
+  font-family: serif;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: .025em;
@@ -160,7 +158,7 @@ img {
   display: block;
   font-size: .85em;
   color: #777777;
-  font-family: "Montserrat", sans-serif;
+  font-family: serif;
   margin: 0;
 }
 
@@ -189,6 +187,18 @@ img {
   font-weight: 700;
 }
 
+.cart .items .cartSection .book-this-tour {
+  background-color: #82ca9c;
+  color: white;
+  font-weight: 700;
+  margin-left: 120px;
+  margin-top: 20px;
+}
+
+.cart .items .cartSection .book-this-tour:hover {
+  background-color: #f69679;
+}
+
 .cart .items .cartSection.prodTotal p {
   font-weight: bold;
   font-size: 1.25em;
@@ -212,7 +222,7 @@ img {
 
 .special {
   display: block;
-  font-family: "Montserrat", sans-serif;
+  font-family: serif;
 }
 
 .special .specialContent {
@@ -232,7 +242,7 @@ img {
 
 a.remove {
   text-decoration: none;
-  font-family: "Montserrat", sans-serif;
+  font-family: serif;
   color: #ffffff;
   font-weight: bold;
   background: #e0e0e0;
@@ -293,7 +303,7 @@ a.remove:hover {
 
 .btn:link, .btn:visited {
   text-decoration: none;
-  font-family: "Montserrat", sans-serif;
+  font-family: serif;
   letter-spacing: -.015em;
   font-size: 1em;
   padding: 1em 3em;
@@ -352,7 +362,7 @@ a.remove:hover {
 }
 
 .subtotal .totalRow .label {
-  font-family: "Montserrat", sans-serif;
+  font-family: sans-serif;
   font-size: .85em;
   text-transform: uppercase;
   color: #777;
@@ -381,6 +391,9 @@ a.remove:hover {
   .cart .items .cartSection .bd {
     margin-left: 0;
   }
+  .cart .items .cartSection .book-this-tour {
+    margin-left: 0;
+  }
   .cart .items .cartSection.prodTotal {
     text-align: right;
   }
@@ -401,7 +414,9 @@ a.remove:hover {
 }
 
 @media screen and (max-width: 1010px) {
-
+  #currencydrops {
+    margin-left: 0px;
+  }
   .heading {
     margin: 0 10px;
   }
@@ -427,9 +442,7 @@ a.remove:hover {
   }
 }
 
-
 @media screen and (max-width: 770px) {
-  
   .dropdown {
     margin-right: 0;
   }

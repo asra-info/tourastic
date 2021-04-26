@@ -65,25 +65,25 @@
     color: rgb(207, 117, 13);
   }
 
-   .book-btn{
+  .book-btn-add-tocart{
 
-    display: block;
-    width: 350px;
-    margin: auto;
+    display: flex;
+    width: 100%;
+    margin-left: 15%;
   }
 
-  .book-btn .btn1{
+  .book-btn-add-tocart .btn1{
     
     background-color: rgb(71, 181, 255);
     color: white;
   }
 
-  .book-btn .btn1:hover{
+  .book-btn-add-tocart .btn1:hover{
 
     color: white;
     background-color: rgb(32, 158, 241);
   }
-  .book-btn .btn2{
+  .book-btn-add-tocart .btn2{
 
     
     background-color: rgb(240, 36, 0);
@@ -91,30 +91,24 @@
 
   }
 
-  .book-btn button:hover{
+  .book-btn-add-tocart button:hover{
 
     color: white;
     background-color: tomato;
   }
- .book-tour-modal{
-
-    top: 10%;
- }
 
  .book-form h4{
      text-align: center;
     margin: 10px 0;
     }
  .form-row{
-     position: relative;
-     width: 700px;
-     margin: auto;
      display: grid;
-     justify-content: center;
+     width: auto;
  }
  .col-auto{
 
     margin-bottom: 20px;
+    justify-content: center;
  }
 
  #plus{
@@ -235,10 +229,44 @@ margin-top: 5px;
 color: rgb(90, 90, 90);
 }
 
+#submit{
+  width: 100%;
+}
+
+@media screen and (max-width: 460px){
+
+.disc{
+
+    margin-left: 0;
+    
+  }
+}
+
+
+@media screen and (max-width: 410px){
+
+  .disc .container .row{
+
+    display: grid;
+    width: 200px;
+    margin: auto;
+  }
+
+  
+  .book-btn-add-tocart{
+
+    display: grid;
+    margin-left: 0;
+    
+  }
+
+}
+
 
   @media screen and (max-width: 1010px) {
     
   
+
   .flex-container {
     display: grid;
   }
@@ -275,10 +303,14 @@ color: rgb(90, 90, 90);
     .disc{
 
         width: 100%;
-        margin: 25px 25px;
+        margin: 25px 0px;
     }
 
-    
+    .form-row{
+      display: grid;
+      width: auto;
+  }
+
   }
   
   

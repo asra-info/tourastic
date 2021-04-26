@@ -37,7 +37,7 @@ body {
 }
 
 .projTitle {
-   font-family: $fontSans;
+   font-family: sans-serif;
     font-weight: bold;
   text-align: center;
   font-size: 2em;
@@ -46,7 +46,7 @@ body {
   letter-spacing: 3px;
   text-transform: uppercase;
   span {
-    font-family: $fontSerif;
+    font-family: sans-serif;
     font-weight: normal;
     font-style: italic;
      text-transform: lowercase;
@@ -60,14 +60,14 @@ body {
   border-bottom: 1px solid #D0D0D0;
  
   h1 {
-   font-family: $fontSerif;
+   font-family: serif;
    font-size: 2em;
    float: left;
   }
   a.continue {
     &:link , &:visited {
       text-decoration: none;
-      font-family: $fontSans;
+      font-family: serif;
       letter-spacing: -.015em;
       font-size: .75em;
       padding: 1em;
@@ -102,7 +102,7 @@ body {
 .tableHead {
   display: table;
   width: 100%;
-  font-family: $fontSans;
+  font-family: serif;
   font-size: .75em;
   li {
     display: table-cell;
@@ -151,7 +151,7 @@ body {
       h3 {
    
         font-size: 1em;
-      font-family: $fontSans;
+      font-family: serif;
         font-weight: bold;
         text-transform: uppercase;
         letter-spacing: .025em;
@@ -162,7 +162,7 @@ body {
         display: block;
         font-size: .85em;
         color: #777777;
-        font-family: $fontSans;
+        font-family: serif;
        margin: 0;
       }
 
@@ -193,6 +193,19 @@ body {
   color: #f30;
   font-weight: 700;
 }
+
+.book-this-tour{
+
+  
+  background-color: #82ca9c;
+  color: white;
+  font-weight: 700;
+  margin-left: 120px;
+  margin-top: 20px;
+
+}
+
+.book-this-tour:hover{background-color:#f69679;}
      &.prodTotal {
         //text-align: center;
     p {
@@ -226,7 +239,7 @@ body {
  
  .special {
    display: block;
-   font-family: $fontSans;
+   font-family: serif;
   .specialContent {
    padding: 1em 1em 0;
     display: block; 
@@ -244,7 +257,7 @@ body {
 
 a.remove {
   text-decoration: none;
-  font-family: $fontSans;
+  font-family: serif;
   color: #ffffff;
   font-weight: bold;
   background: #e0e0e0;
@@ -302,7 +315,7 @@ a.remove {
 .btn {
      &:link , &:visited {
       text-decoration: none;
-      font-family: $fontSans;
+      font-family: serif;
       letter-spacing: -.015em;
       font-size: 1em;
       padding: 1em 3em;
@@ -354,7 +367,7 @@ float: right;
      
     }
     .label {
-       font-family: $fontSans;
+       font-family: sans-serif;
       font-size: .85em;
       text-transform: uppercase;
       color: #777;
@@ -403,6 +416,11 @@ float: right;
         margin-left: 0;
       }
 
+      .book-this-tour{
+
+        margin-left: 0;
+      }
+
       &.prodTotal {
         text-align: right;
     p {
@@ -438,6 +456,10 @@ text-align: center;
   
   @media screen and (max-width: 1010px) {
     
+    #currencydrops{
+
+      margin-left: 0px;
+      }
 
     .heading{
 

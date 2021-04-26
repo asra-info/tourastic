@@ -155,6 +155,17 @@
     font-size: large;
   }
 
+  .ml-auto{
+
+  margin-right: -50px;
+}
+
+
+#currencydrops{
+
+  margin-left: -80px;
+  }
+
   .fa-eye-slash{
     position: absolute;
     top: 18%; 
@@ -221,4 +232,13 @@
       display: none;
     }
   
+  }
+
+  @media screen and (max-width:1010px){
+
+    #currencydrops{
+
+      margin-left: 0px;
+      }
+
   }
