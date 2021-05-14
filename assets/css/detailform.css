@@ -1,0 +1,25 @@
+#outerform{
+
+width: 70%;
+margin: auto;
+
+}
+
+.col{
+
+  margin-bottom: 20px;
+}
+
+#field1{
+
+  margin-top: 30px;
+}
+
+#GFG_DOWN, #GFG_DOWN2, #GFG_DOWN3, 
+#GFG_DOWN4, #GFG_DOWN5, #GFG_DOWN6,
+#GFG_DOWN7, #GFG_DOWN8, #GFG_DOWN9,
+#GFG_DOWN10
+{
+
+  display: none;
+}
