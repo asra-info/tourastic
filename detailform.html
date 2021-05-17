@@ -107,20 +107,43 @@ function showClass(){
                         
 
                         
-            <li class="nav-item" data-toggle="dropdown" style="margin-top: 8px;">
+            
+                        <li class="nav-item" data-toggle="dropdown" style="margin-top: 8px;">
 
-              <div class="dropdown">
-                <button style="background: none; color: rgb(248, 9, 9); border: none;" class="dropdown" type="button" id="dropdownMenuButton"  aria-haspopup="true" aria-expanded="false">
-                  <img src="assets/images/india-flag-round-icon-16.png" alt="" style="margin-right: 5px; margin-top: -5px;">INR
-                </button>
-                <div id="currencydrops" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a style="color: black;" class="dropdown-item" href="#"><img src="assets/images/kuwait-flag-round-icon-16.png" style="margin-right: 5px;" alt="">Dinar</a>
-                  <a style="color: black;" class="dropdown-item" href="#"><img src="assets/images/united-states-of-america-flag-round-icon-16.png" style="margin-right: 5px;" alt="">Dollar</a>
-                  <a style="color: black;" class="dropdown-item" href="#"><img src="assets/images/united-arab-emirates-flag-round-icon-16.png" style="margin-right: 5px;" alt="">Dhiram</a>
-                </div>
-              </div>
-            </li>
-
+                          <div class="dropdown">      
+                            <a class="dropdown" id="main_place"  aria-haspopup="true" aria-expanded="false" style="color: black;" class="dropdown-item" href="#">Currency</a>
+            
+                            <div id="currencydrops" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            
+                              
+                              <a  id="dinar" style="color: black;" onclick="show('operation0')" class="dropdown-item" href="#"><img src="assets/images/india-flag-round-icon-16.png" style="margin-right: 5px;" alt="">INR</a>
+            
+                              <a  id="dinar" style="color: black;" onclick="show('operation1')" class="dropdown-item" href="#"><img src="assets/images/kuwait-flag-round-icon-16.png" style="margin-right: 5px;" alt="">Dinar</a>
+            
+                              <a  id="dinar" style="color: black;" onclick="show('operation2')" class="dropdown-item" href="#"><img src="assets/images/united-states-of-america-flag-round-icon-16.png" style="margin-right: 5px;" alt="">Dollar</a>
+                              
+                              
+                              <a  id="dinar" style="color: black;" onclick="show('operation3')" class="dropdown-item" href="#"><img src="assets/images/united-arab-emirates-flag-round-icon-16.png" style="margin-right: 5px;" alt="">Dhiram</a>
+                             
+                            
+            <div id=operation0 style="display: none;">
+              <img src="assets/images/india-flag-round-icon-16.png" style="margin-right: 5px;" alt=""> INR
+            </div>
+                              
+            <div id=operation1 style="display: none;">
+              <img src="assets/images/kuwait-flag-round-icon-16.png" style="margin-right: 5px;" alt=""> Dinar
+            </div>
+            
+            <div id=operation2 style="display: none;">
+              <img src="assets/images/united-states-of-america-flag-round-icon-16.png" style="margin-right: 5px;" alt=""> Dollar
+            </div>
+            
+            <div id=operation3 style="display: none;">
+              <img src="assets/images/united-arab-emirates-flag-round-icon-16.png" style="margin-right: 5px;" alt=""> Dhiram
+            </div>
+                          </div>
+                        </li>
+          
                     </ul>
                 </div>
             </nav>

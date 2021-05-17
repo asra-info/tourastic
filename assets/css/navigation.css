@@ -187,8 +187,14 @@
     padding-left: 10px;
   }
   
-  
+  .form-select{
 
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: red;
+  }
+  
   @media screen and (max-width:360px){
 
     .top-nav ul li{

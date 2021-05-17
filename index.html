@@ -104,17 +104,40 @@
               <a class="nav-link upper-nav" href="contact-us.html">Contact us</a>
             </li>
 
+            
             <li class="nav-item" data-toggle="dropdown" style="margin-top: 8px;">
 
-              <div class="dropdown">
-                <button style="background: none; color: rgb(248, 9, 9); border: none;" class="dropdown" type="button" id="dropdownMenuButton"  aria-haspopup="true" aria-expanded="false">
-                  <img src="assets/images/india-flag-round-icon-16.png" alt="" style="margin-right: 5px; margin-top: -5px;">INR
-                </button>
+              <div class="dropdown">      
+                <a class="dropdown" id="main_place"  aria-haspopup="true" aria-expanded="false" style="color: black;" class="dropdown-item" href="#">Currency</a>
+
                 <div id="currencydrops" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a style="color: black;" class="dropdown-item" href="#"><img src="assets/images/kuwait-flag-round-icon-16.png" style="margin-right: 5px;" alt="">Dinar</a>
-                  <a style="color: black;" class="dropdown-item" href="#"><img src="assets/images/united-states-of-america-flag-round-icon-16.png" style="margin-right: 5px;" alt="">Dollar</a>
-                  <a style="color: black;" class="dropdown-item" href="#"><img src="assets/images/united-arab-emirates-flag-round-icon-16.png" style="margin-right: 5px;" alt="">Dhiram</a>
-                </div>
+
+                  
+                  <a  id="dinar" style="color: black;" onclick="show('operation0')" class="dropdown-item" href="#"><img src="assets/images/india-flag-round-icon-16.png" style="margin-right: 5px;" alt="">INR</a>
+
+                  <a  id="dinar" style="color: black;" onclick="show('operation1')" class="dropdown-item" href="#"><img src="assets/images/kuwait-flag-round-icon-16.png" style="margin-right: 5px;" alt="">Dinar</a>
+
+                  <a  id="dinar" style="color: black;" onclick="show('operation2')" class="dropdown-item" href="#"><img src="assets/images/united-states-of-america-flag-round-icon-16.png" style="margin-right: 5px;" alt="">Dollar</a>
+                  
+                  
+                  <a  id="dinar" style="color: black;" onclick="show('operation3')" class="dropdown-item" href="#"><img src="assets/images/united-arab-emirates-flag-round-icon-16.png" style="margin-right: 5px;" alt="">Dhiram</a>
+                 
+                
+<div id=operation0 style="display: none;">
+  <img src="assets/images/india-flag-round-icon-16.png" style="margin-right: 5px;" alt=""> INR
+</div>
+                  
+<div id=operation1 style="display: none;">
+  <img src="assets/images/kuwait-flag-round-icon-16.png" style="margin-right: 5px;" alt=""> Dinar
+</div>
+
+<div id=operation2 style="display: none;">
+  <img src="assets/images/united-states-of-america-flag-round-icon-16.png" style="margin-right: 5px;" alt=""> Dollar
+</div>
+
+<div id=operation3 style="display: none;">
+  <img src="assets/images/united-arab-emirates-flag-round-icon-16.png" style="margin-right: 5px;" alt=""> Dhiram
+</div>
               </div>
             </li>
 
@@ -286,7 +309,334 @@
     </div>
   </section>
   <!-- !our short intro -->
+  
+  <!-- top sales tours -->
+  <section class="showcase">
+  
+    <section id="tours-title">
+  
+      <div class="container">
+        <div class="title">
+          <h4 class="title-primary title-primary-sale title-primary1">Tourastic Holidays</h4>
+          <h1 class="h1 h1-responsive title-secondary">Top Sales</h1>
+        </div>
+      </div>
+    </section>
+  
+    <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="card">
+  
+            <!--Card image-->
+            <div class="view">
+          
+  
+              <img src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" class="fluid-img card-img-top"
+                alt="photo">
+  
+                
+                <div class="offer">
+                  <button>upto 30% OFF</button>
+                </div>
+  
+                <div class="img-favrate">
+                  <div>
+                     <i class="fa fa-heart" onclick="changeColor()" id="heart" style="color: white; float: right; font-size: x-large; cursor: pointer;"></i>
+                  </div>
+                </div>
+              <!-- <a href="#">
+                <div class="mask rgba-white-slight"></div>
+              </a> -->
+            </div>
+  
+            <!--Card content-->
+            <div class="card-body">
+              <!--Title-->
+              
+              <h4 class="card-title">Magical Dubai Tour – 5 Days and 4 Nights</h4>
+              <!--Text-->
+  
+              <div class="rating-review" style="display: flex; margin-top: 10px;">
+  
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <h6 style="padding-left: 5px;">0 reviews</h6>
+  
+              </div>
+              <div class="days-prices">
+  
+                <div class="days">
+                  <i class="fa fa-clock"></i>
+                  <h6>5 Days 4 Night</h6>
+                </div>
+  
+                <div class="price">
+                  <h6 class="text-from">From</h6>
+                  <div class="round"
+                    style="display: flex; background-color: black; color: white; padding-top: 10px; border-radius: 10px; margin-left: 10px; padding-right: 10px;">
+                    <i class="fa fa-inr"></i>
+                    <h6><strike>40,000/-</strike></h6>
+                  </div>
+                </div>
 
+                
+                <div class="price2">
+                  <div class="round"
+                    style="display: flex; color: rgb(0, 0, 0); padding-top: 10px; border-radius: 10px; margin-left: 10px; padding-right: 10px;">
+                    <i class="fa fa-inr"></i>
+                    <h6>28,000/-</h6>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="expand" style="margin-top: 90px; display: grid;">
+  
+                <a href="tour-demo.html" style="text-align: center;">Expand Tour</a>
+              </div>
+            </div>
+  
+          </div>
+          <!--/.Card-->
+  
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+  
+            <!--Card image-->
+            <div class="view">
+              <img src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" class="card-img-top"
+                alt="photo">
+                <div class="offer">
+                  <button>upto 30% OFF</button>
+                </div>
+  
+                <div class="img-favrate">
+                  <div>
+                     <i class="fa fa-heart" onclick="changeColor()" id="heart" style="color: white; float: right; font-size: x-large; cursor: pointer;"></i>
+                  </div>
+                </div>
+            </div>
+  
+            <!--Card content-->
+            <div class="card-body">
+              <!--Title-->
+              <h4 class="card-title">Magical Dubai Tour – 5 Days and 4 Nights</h4>
+              <!--Text-->
+  
+              <div class="rating-review" style="display: flex; margin-top: 10px;">
+  
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <h6 style="padding-left: 5px;">0 reviews</h6>
+  
+              </div>
+              <div class="days-prices">
+  
+                <div class="days">
+                  <i class="fa fa-clock"></i>
+                  <h6>5 Days 4 Night</h6>
+                </div>
+  
+                <div class="price">
+                  <h6 class="text-from">From</h6>
+                  <div class="round"
+                    style="display: flex; background-color: black; color: white; padding-top: 10px; border-radius: 10px; margin-left: 10px; padding-right: 10px;">
+                    <i class="fa fa-inr"></i>
+                    <h6><strike>40,000/-</strike></h6>
+                  </div>
+                </div>
+
+           
+                
+                <div class="price2">
+                  <div class="round"
+                    style="display: flex; color: rgb(0, 0, 0); padding-top: 10px; border-radius: 10px; margin-left: 10px; padding-right: 10px;">
+                    <i class="fa fa-inr"></i>
+                    <h6>28,000/-</h6>
+                  </div>
+                </div>
+
+              </div>
+  
+              <div class="expand" style="margin-top: 90px; display: grid;">
+  
+                <a href="tour-demo.html" style="text-align: center;">Expand Tour</a>
+              </div>
+            </div>
+  
+          </div>
+          <!--/.Card-->
+  
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+  
+            <!--Card image-->
+            <div class="view">
+              <img src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" class="card-img-top"
+                alt="photo">
+  
+                <div class="offer">
+                  <button>upto 30% OFF</button>
+                </div>
+  
+                <div class="img-favrate">
+                  <div>
+                     <i class="fa fa-heart" onclick="changeColor()" id="heart" style="color: white; float: right; font-size: x-large; cursor: pointer;"></i>
+                  </div>
+                </div>
+            </div>
+  
+            <!--Card content-->
+            <div class="card-body">
+              <!--Title-->
+              <h4 class="card-title">Magical Dubai Tour – 5 Days and 4 Nights</h4>
+              <!--Text-->
+  
+              <div class="rating-review" style="display: flex; margin-top: 10px;">
+  
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <h6 style="padding-left: 5px;">0 reviews</h6>
+  
+              </div>
+              <div class="days-prices">
+  
+                <div class="days">
+                  <i class="fa fa-clock"></i>
+                  <h6>5 Days 4 Night</h6>
+                </div>
+  
+                <div class="price">
+                  <h6 class="text-from">From</h6>
+                  <div class="round"
+                    style="display: flex; background-color: black; color: white; padding-top: 10px; border-radius: 10px; margin-left: 10px; padding-right: 10px;">
+                    <i class="fa fa-inr"></i>
+                    <h6><strike>40,000/-</strike></h6>
+                  </div>
+                </div>
+
+                
+                <div class="price2">
+                  <div class="round"
+                    style="display: flex; color: black; padding-top: 10px; border-radius: 10px; margin-left: 10px; padding-right: 10px;">
+                    <i class="fa fa-inr"></i>
+                    <h6>40,000/-</h6>
+                  </div>
+                </div>
+              
+              </div>
+  
+              <div class="expand" style="margin-top: 90px; display: grid;">
+  
+                <a href="tour-demo.html" style="text-align: center;">Expand Tour</a>
+              </div>
+            </div>
+  
+          </div>
+          <!--/.Card-->
+  
+  
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+  
+            <!--Card image-->
+            <div class="view">
+              <img src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" class="card-img-top"
+                alt="photo">
+  
+                <div class="offer">
+                  <button>upto 30% OFF</button>
+                </div>
+                
+                <div class="img-favrate">
+                  <div>
+                     <i class="fa fa-heart" id="heart" style="color: white; float: right; font-size: x-large; cursor: pointer;"></i>
+                  </div>
+                </div>
+            </div>
+  
+            <!--Card content-->
+            <div class="card-body">
+              <!--Title-->
+              <h4 class="card-title">Magical Dubai Tour – 5 Days and 4 Nights</h4>
+              <!--Text-->
+  
+              <div class="rating-review" style="display: flex; margin-top: 10px;">
+  
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <h6 style="padding-left: 5px;">0 reviews</h6>
+  
+              </div>
+              <div class="days-prices">
+  
+                <div class="days">
+                  <i class="fa fa-clock"></i>
+                  <h6>5 Days 4 Night</h6>
+                </div>
+  
+                <div class="price">
+                  <h6 class="text-from">From</h6>
+                  <div class="round"
+                    style="display: flex; background-color: black; color: white; padding-top: 10px; border-radius: 10px; margin-left: 10px; padding-right: 10px;">
+                    <i class="fa fa-inr"></i>
+                    <h6><strike>40,000/-</strike></h6>
+                  </div>
+                </div>
+
+                <div class="price2">
+                  <div class="round"
+                    style="display: flex; color: black; padding-top: 10px; border-radius: 10px; margin-left: 10px; padding-right: 10px;">
+                    <i class="fa fa-inr"></i>
+                    <h6>40,000/-</h6>
+                  </div>
+                </div>
+              
+              </div>
+  
+              <div class="expand" style="margin-top: 90px; display: grid;">
+  
+                <a href="tour-demo.html" style="text-align: center;">Expand Tour</a>
+              </div>
+            </div>
+  
+          </div>
+          <!--/.Card-->
+  
+  
+        </div>
+  
+  
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+  
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+  
+      <!-- If we need scrollbar -->
+      <!-- <div class="swiper-scrollbar"></div> -->
+  
+    </div>
+  
+  </section>
+  <!-- Trending tours -->
+  
+  
 
   <!-- popular destination title -->
   <section id="popular-destinations">
@@ -299,8 +649,8 @@
     </div>
   </section>
   <!-- !popular destination title -->
-
-
+  
+  
   <!-- top destinations -->
   <main class="my-5">
     <div class="container">
@@ -429,292 +779,6 @@
   
     
 
-<!-- top sales tours -->
-<section class="showcase">
-
-  <section id="tours-title">
-
-    <div class="container">
-      <div class="title">
-        <h4 class="title-primary title-primary-sale title-primary1">Tourastic Holidays</h4>
-        <h1 class="h1 h1-responsive title-secondary">Top Sales</h1>
-      </div>
-    </div>
-  </section>
-
-  <div class="swiper-container">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide">
-        <div class="card">
-
-          <!--Card image-->
-          <div class="view">
-        
-
-            <img src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" class="fluid-img card-img-top"
-              alt="photo">
-
-              
-              <div class="offer">
-                <button>upto 30% OFF</button>
-              </div>
-
-              <div class="img-favrate">
-                <div>
-                   <i class="fa fa-heart" onclick="changeColor()" id="heart" style="color: white; float: right; font-size: x-large; cursor: pointer;"></i>
-                </div>
-              </div>
-            <!-- <a href="#">
-              <div class="mask rgba-white-slight"></div>
-            </a> -->
-          </div>
-
-          <!--Card content-->
-          <div class="card-body">
-            <!--Title-->
-            
-            <h4 class="card-title">Magical Dubai Tour – 5 Days and 4 Nights</h4>
-            <!--Text-->
-
-            <div class="rating-review" style="display: flex; margin-top: 10px;">
-
-              <i class="fa fa-star-o" aria-hidden="true"></i>
-              <i class="fa fa-star-o" aria-hidden="true"></i>
-              <i class="fa fa-star-o" aria-hidden="true"></i>
-              <i class="fa fa-star-o" aria-hidden="true"></i>
-              <h6 style="padding-left: 5px;">0 reviews</h6>
-
-            </div>
-            <div class="days-prices">
-
-              <div class="days">
-                <i class="fa fa-clock"></i>
-                <h6>5 Days 4 Night</h6>
-              </div>
-
-              <div class="price">
-                <h6 class="text-from">From</h6>
-                <div class="round"
-                  style="display: flex; background-color: black; color: white; padding-top: 10px; border-radius: 10px; margin-left: 10px; padding-right: 10px;">
-                  <i class="fa fa-inr"></i>
-                  <h6>40,000/-</h6>
-                </div>
-              </div>
-            </div>
-
-            <div class="expand" style="margin-top: 90px; display: grid;">
-
-              <a href="tour-demo.html" style="text-align: center;">Expand Tour</a>
-            </div>
-          </div>
-
-        </div>
-        <!--/.Card-->
-
-      </div>
-      <div class="swiper-slide">
-        <div class="card">
-
-          <!--Card image-->
-          <div class="view">
-            <img src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" class="card-img-top"
-              alt="photo">
-              <div class="offer">
-                <button>upto 30% OFF</button>
-              </div>
-
-              <div class="img-favrate">
-                <div>
-                   <i class="fa fa-heart" onclick="changeColor()" id="heart" style="color: white; float: right; font-size: x-large; cursor: pointer;"></i>
-                </div>
-              </div>
-          </div>
-
-          <!--Card content-->
-          <div class="card-body">
-            <!--Title-->
-            <h4 class="card-title">Magical Dubai Tour – 5 Days and 4 Nights</h4>
-            <!--Text-->
-
-            <div class="rating-review" style="display: flex; margin-top: 10px;">
-
-              <i class="fa fa-star-o" aria-hidden="true"></i>
-              <i class="fa fa-star-o" aria-hidden="true"></i>
-              <i class="fa fa-star-o" aria-hidden="true"></i>
-              <i class="fa fa-star-o" aria-hidden="true"></i>
-              <h6 style="padding-left: 5px;">0 reviews</h6>
-
-            </div>
-            <div class="days-prices">
-
-              <div class="days">
-                <i class="fa fa-clock"></i>
-                <h6>5 Days 4 Night</h6>
-              </div>
-
-              <div class="price">
-                <h6 class="text-from">From</h6>
-                <div class="round"
-                  style="display: flex; background-color: black; color: white; padding-top: 10px; border-radius: 10px; margin-left: 10px; padding-right: 10px;">
-                  <i class="fa fa-inr"></i>
-                  <h6>40,000/-</h6>
-                </div>
-              </div>
-            </div>
-
-            <div class="expand" style="margin-top: 90px; display: grid;">
-
-              <a href="tour-demo.html" style="text-align: center;">Expand Tour</a>
-            </div>
-          </div>
-
-        </div>
-        <!--/.Card-->
-
-      </div>
-      <div class="swiper-slide">
-        <div class="card">
-
-          <!--Card image-->
-          <div class="view">
-            <img src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" class="card-img-top"
-              alt="photo">
-
-              <div class="offer">
-                <button>upto 30% OFF</button>
-              </div>
-
-              <div class="img-favrate">
-                <div>
-                   <i class="fa fa-heart" onclick="changeColor()" id="heart" style="color: white; float: right; font-size: x-large; cursor: pointer;"></i>
-                </div>
-              </div>
-          </div>
-
-          <!--Card content-->
-          <div class="card-body">
-            <!--Title-->
-            <h4 class="card-title">Magical Dubai Tour – 5 Days and 4 Nights</h4>
-            <!--Text-->
-
-            <div class="rating-review" style="display: flex; margin-top: 10px;">
-
-              <i class="fa fa-star-o" aria-hidden="true"></i>
-              <i class="fa fa-star-o" aria-hidden="true"></i>
-              <i class="fa fa-star-o" aria-hidden="true"></i>
-              <i class="fa fa-star-o" aria-hidden="true"></i>
-              <h6 style="padding-left: 5px;">0 reviews</h6>
-
-            </div>
-            <div class="days-prices">
-
-              <div class="days">
-                <i class="fa fa-clock"></i>
-                <h6>5 Days 4 Night</h6>
-              </div>
-
-              <div class="price">
-                <h6 class="text-from">From</h6>
-                <div class="round"
-                  style="display: flex; background-color: black; color: white; padding-top: 10px; border-radius: 10px; margin-left: 10px; padding-right: 10px;">
-                  <i class="fa fa-inr"></i>
-                  <h6>40,000/-</h6>
-                </div>
-              </div>
-            </div>
-
-            <div class="expand" style="margin-top: 90px; display: grid;">
-
-              <a href="tour-demo.html" style="text-align: center;">Expand Tour</a>
-            </div>
-          </div>
-
-        </div>
-        <!--/.Card-->
-
-
-      </div>
-      <div class="swiper-slide">
-        <div class="card">
-
-          <!--Card image-->
-          <div class="view">
-            <img src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" class="card-img-top"
-              alt="photo">
-
-              <div class="offer">
-                <button>upto 30% OFF</button>
-              </div>
-              
-              <div class="img-favrate">
-                <div>
-                   <i class="fa fa-heart" id="heart" style="color: white; float: right; font-size: x-large; cursor: pointer;"></i>
-                </div>
-              </div>
-          </div>
-
-          <!--Card content-->
-          <div class="card-body">
-            <!--Title-->
-            <h4 class="card-title">Magical Dubai Tour – 5 Days and 4 Nights</h4>
-            <!--Text-->
-
-            <div class="rating-review" style="display: flex; margin-top: 10px;">
-
-              <i class="fa fa-star-o" aria-hidden="true"></i>
-              <i class="fa fa-star-o" aria-hidden="true"></i>
-              <i class="fa fa-star-o" aria-hidden="true"></i>
-              <i class="fa fa-star-o" aria-hidden="true"></i>
-              <h6 style="padding-left: 5px;">0 reviews</h6>
-
-            </div>
-            <div class="days-prices">
-
-              <div class="days">
-                <i class="fa fa-clock"></i>
-                <h6>5 Days 4 Night</h6>
-              </div>
-
-              <div class="price">
-                <h6 class="text-from">From</h6>
-                <div class="round"
-                  style="display: flex; background-color: black; color: white; padding-top: 10px; border-radius: 10px; margin-left: 10px; padding-right: 10px;">
-                  <i class="fa fa-inr"></i>
-                  <h6>40,000/-</h6>
-                </div>
-              </div>
-            </div>
-
-            <div class="expand" style="margin-top: 90px; display: grid;">
-
-              <a href="tour-demo.html" style="text-align: center;">Expand Tour</a>
-            </div>
-          </div>
-
-        </div>
-        <!--/.Card-->
-
-
-      </div>
-
-
-    </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-
-    <!-- If we need scrollbar -->
-    <!-- <div class="swiper-scrollbar"></div> -->
-
-  </div>
-
-</section>
-<!-- Trending tours -->
 
 
 

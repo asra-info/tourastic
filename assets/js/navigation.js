@@ -22,3 +22,7 @@ eye2.addEventListener('click', function (e) {
     // toggle the eye slash icon
     this.classList.toggle('fa-eye-slash');
 });
+
+function show(param_div_id) {
+    document.getElementById('main_place').innerHTML = document.getElementById(param_div_id).innerHTML;
+  }

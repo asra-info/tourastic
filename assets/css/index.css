@@ -334,6 +334,16 @@ form h4 {
   display: flex;
 }
 
+.price2 {
+  padding: 5px 10px 10px 30px;
+  position: absolute;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+}
+
 .price .text-from {
   margin-top: 10px;
 }
