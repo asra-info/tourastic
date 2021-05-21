@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap CSS CDN -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"> -->
+  <!-- Our Custom CSS -->
+  <!-- <link rel="stylesheet" href="style3.css"> -->
+
+  <!-- Scrollbar Custom CSS -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- custom CSS -->
+  <link rel="stylesheet" href="assets/css/navigation.css">
+  <link rel="stylesheet" href="assets/css/payment-done.css">
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/path/to/slick.css">
+  <link rel="stylesheet" href="/path/to/slick-theme.css">
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+  <title>Payment Done</title>
+</head>
+
+<body>
+
+  <!-- header -->
+  <header>
+    <div class="top-header bg-secondary">
+      <div class="container">
+        <div class="top-nav">
+
+          <ul>
+            <li id="phone"> <a href=""><i class="fas fa-phone"> </i> +91 6264775696</a></li>
+            <li id="email"><a href=""><i class="fas fa-envelope"> </i> tourastic@gmail.com</a></li>
+
+          </ul>
+
+
+          <ul id="user-n">
+
+            <div class="dropdown">
+              <a type="button" class="dropdown-toggle" data-toggle="dropdown">
+                Hi, aditya sharma
+              </a>
+              <div class="dropdown-menu" style="margin-right: 15px;">
+                <a class="dropdown-item" href="user-profile.html"><i class="fa fa-user-o"> Your Profile</i></a>
+                <a class="dropdown-item" href="order-history.html"><i class="fa fa-history" aria-hidden="true"> Order History</i></a>
+                <a class="dropdown-item" href="saved.html"><i class="fa fa-heart-o" aria-hidden="true"> Saved</i></a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="index.html"><i class="fa fa-sign-out" aria-hidden="true"> Logout</i></a>
+              </div>
+            </div>
+          </div>
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <nav class="navbar navbar-expand-lg flexes">
+
+        <a class="navbar-brand" href="#"><img src="assets/images/short-logo.png" height="30"
+            class="d-inline-block align-top" alt="mdb logo"></a>
+
+        <a class="navbar-brand" href="#" style="color:rgb(98, 98, 255);">Tourastic</a>
+
+
+
+        <button class="navbar-toggler" style="height: auto; width: auto;" type="button" data-toggle="collapse"
+          data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="assets/images/menu.png" style="width: 30px; height: 30px;" alt="">
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tour-packages.html">Tour Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hotels</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Flights</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blogs.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact-us.html">Contact us</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="cart.html">
+                  <span class="fa-stack" data-count="3">
+                    <i class="fa fa-stack-2x"></i>
+                    <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                  </span>
+                  </a>
+              </li>
+
+  
+              <li class="nav-item" data-toggle="dropdown" style="margin-top: 8px;">
+
+                <div class="dropdown">      
+                  <a class="dropdown" id="main_place"  aria-haspopup="true" aria-expanded="false" style="color: black;" class="dropdown-item" href="#">Currency</a>
+  
+                  <div id="currencydrops" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+  
+                    
+                    <a  id="dinar" style="color: black;" onclick="show('operation0')" class="dropdown-item" href="#"><img src="assets/images/india-flag-round-icon-16.png" style="margin-right: 5px;" alt="">INR</a>
+  
+                    <a  id="dinar" style="color: black;" onclick="show('operation1')" class="dropdown-item" href="#"><img src="assets/images/kuwait-flag-round-icon-16.png" style="margin-right: 5px;" alt="">Dinar</a>
+  
+                    <a  id="dinar" style="color: black;" onclick="show('operation2')" class="dropdown-item" href="#"><img src="assets/images/united-states-of-america-flag-round-icon-16.png" style="margin-right: 5px;" alt="">Dollar</a>
+                    
+                    
+                    <a  id="dinar" style="color: black;" onclick="show('operation3')" class="dropdown-item" href="#"><img src="assets/images/united-arab-emirates-flag-round-icon-16.png" style="margin-right: 5px;" alt="">Dhiram</a>
+                   
+                  
+  <div id=operation0 style="display: none;">
+    <img src="assets/images/india-flag-round-icon-16.png" style="margin-right: 5px;" alt=""> INR
+  </div>
+                    
+  <div id=operation1 style="display: none;">
+    <img src="assets/images/kuwait-flag-round-icon-16.png" style="margin-right: 5px;" alt=""> Dinar
+  </div>
+  
+  <div id=operation2 style="display: none;">
+    <img src="assets/images/united-states-of-america-flag-round-icon-16.png" style="margin-right: 5px;" alt=""> Dollar
+  </div>
+  
+  <div id=operation3 style="display: none;">
+    <img src="assets/images/united-arab-emirates-flag-round-icon-16.png" style="margin-right: 5px;" alt=""> Dhiram
+  </div>
+                </div>
+              </li>
+
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+
+  </header>
+  <!-- !header -->
+
+
+  <!--Modal: Login / Register Form-->
+  <div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog cascading-modal" role="document">
+      <!--Content-->
+      <div class="modal-content">
+  
+        <!--Modal cascading tabs-->
+        <div class="modal-c-tabs">
+  
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fas fa-user mr-1"></i>
+                Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i class="fas fa-user-plus mr-1"></i>
+                Register</a>
+            </li>
+          </ul>
+  
+          <!-- Tab panels -->
+          <div class="tab-content">
+            <!--Panel 7-->
+            <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+  
+              <!--Body-->
+              <div class="modal-body mb-1">
+                <div class="md-form form-sm mb-5">
+                  <i class="fas fa-envelope prefix"></i>
+                  <input type="email" id="modalLRInput10" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="modalLRInput10">Your email</label>
+                </div>
+  
+                <div class="md-form form-sm mb-4">
+                  <i class="fas fa-lock prefix"></i>
+                  <input type="password" id="modalLRInput11" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="modalLRInput11">Your password</label>
+                </div>
+                <div class="text-center mb-3">
+                  <button type="button" class="btn blue-gradient btn-block btn-rounded z-depth-1a">Sign in</button>
+                </div>
+              </div>
+              <!--Footer-->
+              <div class="modal-footer">
+                <div class="options text-center text-md-right mt-1">
+                  <!-- <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p> -->
+                  <p><a href="#" data-toggle="modal" data-target="#exampleModal" class="blue-text">Forgot Password?</a></p>
+                </div>
+                <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+              </div>
+  
+            </div>
+            <!--/.Panel 7-->
+  
+            <!--Panel 8-->
+            <div class="tab-pane fade" id="panel8" role="tabpanel">
+  
+              <!--Body-->
+              <div class="modal-body">
+                <div class="md-form form-sm mb-5">
+                  <i class="fas fa-envelope prefix"></i>
+                  <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="modalLRInput12">Your email</label>
+                </div>
+  
+                <div class="md-form form-sm mb-5">
+                  <i class="fas fa-lock prefix"></i>
+                  <input type="password" id="modalLRInput13" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="modalLRInput13">Your password</label>
+                </div>
+  
+                <div class="md-form form-sm mb-4">
+                  <i class="fas fa-lock prefix"></i>
+                  <input type="password" id="modalLRInput14" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="modalLRInput14">Repeat password</label>
+                </div>
+  
+                <div class="text-center form-sm mt-2">
+                  <button class="btn btn-info">Register</button>
+                </div>
+  
+              </div>
+              <!--Footer-->
+              <div class="modal-footer">
+                <!-- <div class="options text-right">
+                  <p class="pt-1">Already have an account? <a href="#panel7" class="blue-text">Log In</a></p>
+                </div> -->
+                <button type="button" class="btn btn-outline-info waves-effect" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            <!--/.Panel 8-->
+          </div>
+  
+        </div>
+      </div>
+      <!--/.Content-->
+    </div>
+  </div>
+  <!--Modal: Login / Register Form-->
+  
+  <!-- forget password modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title" id="exampleModalLabel">Reset You're Passward</h1>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <p style="color: seagreen; font-weight: bold;">Passward Reset Link Will Be Send To Your Registered Email address... </p><br>
+            <input type="email" class="form-control" id="validationDefault03" required placeholder="Enter Your Email">
+          </div>
+          <p id="checkemail" style="text-align: center; color: teal; font-weight: bold;"></p>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button> -->
+          <button id="sendemaillink" type="button" class="btn btn-primary" onclick="emailsent()">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- lforget password modal -->
+  
+ 
+  <div class="container">
+    <div class="row">
+       <div class="col-md-6 mx-auto mt-5">
+          <div class="payment">
+             <div class="payment_header">
+                <div class="check"><i class="fa fa-check" aria-hidden="true"></i></div>
+             </div>
+             <div class="content">
+                <h1>Payment Success !</h1>
+                <h4> <i class="fa fa-rupee"></i> 45,790/-</h4>
+
+                <p>Payment Success of your trip GOA TOUR and your TRANSACTION ID is E3582719303 save this transaction id or take a screenshot of this page for further use.</p>
+                <a href="#">Go to Home</a>
+             </div>
+             
+          </div>
+       </div>
+    </div>
+ </div>
+
+
+
+<!-- Footer -->
+<footer class="page-footer font-small unique-color-dark">
+
+  <div style="background-color: #6351ce;">
+    <div class="container">
+
+      <!-- Grid row-->
+      <div class="row py-4 d-flex align-items-center">
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+          <h6 class="mb-0">Get connected with us on social networks!</h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <i class="fab fa-facebook-f white-text mr-4"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+            <i class="fab fa-twitter white-text mr-4"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic">
+            <i class="fab fa-google-plus-g white-text mr-4"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <i class="fab fa-linkedin-in white-text mr-4"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <i class="fab fa-instagram white-text"> </i>
+          </a>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+  </div>
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5">
+
+    <!-- Grid row -->
+    <div class="row mt-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+        <!-- Content -->
+        <h6 class="text-uppercase font-weight-bold">Tourastic</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>Tourastic is a private travel agency that provides travel and tourism-related services to the general public on behalf of accommodation or travel suppliers to offer different kinds of travelling packages for each destination.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Quick Links</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a href="tour-packages.html">Tour packages</a>
+        </p>
+        <p>
+          <a href="contact-us.html">Contact us</a>
+        </p>
+        <p>
+          <a href="#!">Hotels</a>
+        </p>
+        <p>
+          <a href="#!">Flights</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a href="#!">Your Account</a>
+        </p>
+        <p>
+          <a href="#!">Become an Affiliate</a>
+        </p>
+        <p>
+          <a href="#!">Shipping Rates</a>
+        </p>
+        <p>
+          <a href="#!">Help</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Contact</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <i class="fas fa-home mr-3"></i> Railway Station Road, Mandsaur, 458001</p>
+        <p>
+          <i class="fas fa-envelope mr-3"></i> tourastic@gmail.com</p>
+        <p>
+          <i class="fas fa-phone mr-3"></i> + 91 626 477 56 96</p>
+        <p>
+          <i class="fas fa-print mr-3"></i> + 91 822 302 89 10</p>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2021 Copyright:
+    <a href="https://mdbootstrap.com/"> Tourastic.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+<script src="assets/js/index.js"></script>
+</body>
+
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+<!-- swipejs -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- slick -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+  integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+<!-- jQuery CDN - Slim version (=without AJAX) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!-- Popper.JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+  integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+
+<!-- jQuery Custom Scroller CDN -->
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+<!-- custom js -->
+<script src="assets/js/cart.js"></script>
+
+
+<script>
+
+
+  const swiper_showcase = new Swiper('.showcase .swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: false,
+    slidesPerView: 1,
+    spaceBetween: 10,
+
+    //   If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      740: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      840: {
+        slidesPerView: 2,
+        spaceBetween: 30
+      },
+      991: {
+        slidesPerView: 3,
+        spaceBetween: 40
+      },
+
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 40
+      },
+      1440: {
+        slidesPerView: 4,
+        spaceBetween: 40
+      }
+    }
+
+    // And if we need scrollbar
+    //   scrollbar: {
+    //     el: '.swiper-scrollbar',
+    //   },
+  });
+
+
+  $(document).ready(function () {
+    $("#sidebar").mCustomScrollbar({
+      theme: "minimal"
+    });
+
+    $('#dismiss, .overlay').on('click', function () {
+      $('#sidebar').removeClass('active');
+      $('.overlay').removeClass('active');
+    });
+
+    $('#sidebarCollapse').on('click', function () {
+      $('#sidebar').addClass('active');
+      $('.overlay').addClass('active');
+      $('.collapse.in').toggleClass('in');
+      $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+    });
+  });
+
+
+</script>
+
+</html>
