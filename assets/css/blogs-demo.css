@@ -1,4 +1,9 @@
-  body {
+html{
+
+  scroll-behavior: smooth;
+}
+
+body {
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
   }
@@ -15,3 +20,21 @@
 width: 100%;
 }
 
+
+.display-4 {
+  font-size: 41px;
+  font-weight: 700;
+
+}
+
+.row{margin-bottom: 80px;}
+
+
+.next-prev_btn {
+  padding: 10px;
+  border-radius: 30px;
+  /* margin-top: 20px; */
+  transition: 0.5s;
+}
+
+.prev-btn:hover{color: white; background-color: skyblue;}
